@@ -1,6 +1,4 @@
 (function () {
-    const SELECTOR =
-      'td[title=""]'; 
     const CODE_SELECTOR =
       'td[title=""]'; 
     const BUTTON_SELECTOR =
@@ -9,7 +7,6 @@
     function workerNode() {
       document.querySelectorAll("tbody tr").forEach((row) => {
         if (
-          row.querySelector(SELECTOR) &&
           row.querySelector(CODE_SELECTOR)
         ) {
           row.remove();
